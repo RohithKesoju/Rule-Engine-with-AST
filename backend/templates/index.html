@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rule Engine</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Rule Engine with AST</h1>
+
+    <form id="rule-form">
+      <label for="rule">Enter Rule:</label>
+      <input
+        type="text"
+        id="rule"
+        name="rule"
+        placeholder="e.g., age > 30 AND department = 'Sales'"
+      />
+      <button type="submit">Create Rule</button>
+    </form>
+
+    <div id="ast-diagram"></div>
+
+    <form id="data-form">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" />
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" />
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" />
+      <label for="experience">Experience (years):</label>
+      <input type="number" id="experience" name="experience" />
+      <button type="submit">Test Rule</button>
+    </form>
+
+    <div id="result">Rule evaluation result will be shown here.</div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
