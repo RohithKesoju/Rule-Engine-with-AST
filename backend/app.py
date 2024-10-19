@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify
-from rule_engine import create_rule, evaluate_rule, recreate_ast
-from database import save_rule  # Import the save_rule function
-from database import create_rules_table
+from rule_engine import create_rule, evaluate_rule, recreate_ast, combine_rules
+from database import save_rule, get_rule_by_id, create_rules_table
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
@@ -42,6 +41,35 @@ def evaluate_rule_api():
         ast = recreate_ast(ast_data)  # Recreate the AST from the incoming data
         result = evaluate_rule(ast, user_data)  # Evaluate the rule against user data
         return jsonify({'result': result}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+# API to combine multiple rules into a single rule (AST)
+@app.route('/api/combine_rules', methods=['POST'])
+def combine_rules_api():
+    data = request.json
+    rule_ids = data.get('rule_ids')
+    operator = data.get('operator', 'AND')  # Default operator is 'AND'
+
+    if not rule_ids or len(rule_ids) < 2:
+        return jsonify({'error': 'At least two rule IDs are required for combination'}), 400
+
+    try:
+        # Fetch the ASTs of the rules by their IDs
+        rules = []
+        for rule_id in rule_ids:
+            rule_data = get_rule_by_id(rule_id)
+            if not rule_data:
+                return jsonify({'error': f'Rule with ID {rule_id} not found'}), 404
+            
+            # Assuming rule_data is a dictionary with 'ast_data' as the AST string
+            rules.append(recreate_ast(rule_data['ast_data']))
+
+        # Combine the rules into a single AST
+        combined_ast = combine_rules(rules, operator)
+
+        # Return the combined AST as a response
+        return jsonify({'combined_ast': combined_ast.to_dict()}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
