@@ -109,7 +109,6 @@ URL: http://localhost:5000/api/evaluate_rule
 
 ## Outputs 
 ![3](https://github.com/user-attachments/assets/f22c2983-a3c6-4590-82bb-cd9b3b382da6)
-![4](https://github.com/user-attachments/assets/4146a757-20c6-435c-97f7-e399ac789c09)
 ![5](https://github.com/user-attachments/assets/42b31e2c-2dda-44d3-994c-3836bd6fe785)
 ![6](https://github.com/user-attachments/assets/e95faff1-347f-4c5f-9b65-a6ff052290c0)
 ![7](https://github.com/user-attachments/assets/dae4d87a-9c96-47ab-b315-0184ea5d25ca)
