@@ -107,3 +107,14 @@ URL: http://localhost:5000/api/evaluate_rule
 - Rule visualization
 - Integration with other systems
 
+## Outputs 
+![1](https://github.com/user-attachments/assets/0f5413d2-651d-4a58-b8ad-db2351e6dbe1)
+![2](https://github.com/user-attachments/assets/eb10ddcc-8979-44ef-a70b-93088eab10ab)
+![3](https://github.com/user-attachments/assets/b5c6af31-957f-4376-910f-0c113ef17189)
+![4](https://github.com/user-attachments/assets/0b3bea50-5ad6-40dc-8bd7-98247ac413e4)
+![5](https://github.com/user-attachments/assets/9883e2b9-0147-43e2-b24f-5c949290d785)
+![6](https://github.com/user-attachments/assets/80b43619-ad00-4721-bfe9-e50f4ee09d0e)
+![7](https://github.com/user-attachments/assets/dc1f0e96-f3e0-49c8-847b-264bae4918fe)
+![8](https://github.com/user-attachments/assets/38cfb7d9-b034-49db-9c68-6befc3df7b10)
+
+
