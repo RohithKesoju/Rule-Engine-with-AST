@@ -108,13 +108,14 @@ URL: http://localhost:5000/api/evaluate_rule
 - Integration with other systems
 
 ## Outputs 
-![1](https://github.com/user-attachments/assets/0f5413d2-651d-4a58-b8ad-db2351e6dbe1)
-![2](https://github.com/user-attachments/assets/eb10ddcc-8979-44ef-a70b-93088eab10ab)
-![3](https://github.com/user-attachments/assets/b5c6af31-957f-4376-910f-0c113ef17189)
-![4](https://github.com/user-attachments/assets/0b3bea50-5ad6-40dc-8bd7-98247ac413e4)
-![5](https://github.com/user-attachments/assets/9883e2b9-0147-43e2-b24f-5c949290d785)
-![6](https://github.com/user-attachments/assets/80b43619-ad00-4721-bfe9-e50f4ee09d0e)
-![7](https://github.com/user-attachments/assets/dc1f0e96-f3e0-49c8-847b-264bae4918fe)
-![8](https://github.com/user-attachments/assets/38cfb7d9-b034-49db-9c68-6befc3df7b10)
+![3](https://github.com/user-attachments/assets/f22c2983-a3c6-4590-82bb-cd9b3b382da6)
+![4](https://github.com/user-attachments/assets/4146a757-20c6-435c-97f7-e399ac789c09)
+![5](https://github.com/user-attachments/assets/42b31e2c-2dda-44d3-994c-3836bd6fe785)
+![6](https://github.com/user-attachments/assets/e95faff1-347f-4c5f-9b65-a6ff052290c0)
+![7](https://github.com/user-attachments/assets/dae4d87a-9c96-47ab-b315-0184ea5d25ca)
+![8](https://github.com/user-attachments/assets/33493456-f13c-4aa6-8660-8dbe4a469a3f)
+![1](https://github.com/user-attachments/assets/1fa028fc-c2ea-4756-a608-cf180ad67769)
+![2](https://github.com/user-attachments/assets/3443955c-458c-4607-88ca-c865ed87c504)
+
 
 
